@@ -1,12 +1,11 @@
 var mongoose = require('mongoose');
 
-var VillainSchema = new mongoose.Schema({
+var CivilianSchema = new mongoose.Schema({
 	name: String,
-	movie: String,
-	power: String,
-	height: Number
+	age: Number,
+	origin: String
 });
 
-var villainModel = mongoose.model('Villain', VillainSchema);
+var civilianModel = mongoose.model('Civilian', CivilianSchema);
 
-module.exports = villainModel;
+module.exports = civilianModel;
